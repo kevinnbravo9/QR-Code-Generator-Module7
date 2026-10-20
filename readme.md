@@ -63,20 +63,7 @@ docker build -t qr-code-generator-app .
 Run the application inside a Docker container:
 
 ```bash
-docker run -d --name qr-generator qr-code-generator-app
-```
-
-Check the container logs:
-
-```bash
-docker logs qr-generator
-```
-
-Stop and remove the container:
-
-```bash
-docker stop qr-generator
-docker rm qr-generator
+docker run --rm qr-code-generator-app
 ```
 
 ## Docker Compose
